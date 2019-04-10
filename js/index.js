@@ -49,8 +49,11 @@ anchorTags[3].textContent = "Features";
 anchorTags[4].textContent = "About";
 anchorTags[5].textContent = "Contact";
 
-let ctaText = document.querySelector('.cta-text');
+let ctaText = document.querySelector("h1");
 ctaText.textContent = "DOM Is Awesome";
+
+const ctaBtn = document.querySelector("button");
+ctaBtn.textContent = "Get Started";
 
 const ctaImg = document.querySelector('#cta-img');
 ctaImg.src = "img/header-img.png";
