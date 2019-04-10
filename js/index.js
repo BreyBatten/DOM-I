@@ -48,4 +48,12 @@ anchorTags[2].textContent = "Vision";
 anchorTags[3].textContent = "Features";
 anchorTags[4].textContent = "About";
 anchorTags[5].textContent = "Contact";
-console.log(anchorTags);
+
+let ctaText = document.querySelector('.cta-text');
+ctaText.textContent = "DOM Is Awesome";
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = "img/header-img.png";
+
+const midImg = document.querySelector('#middle-img');
+midImg.src = "img/mid-page-accent.jpg";
