@@ -41,3 +41,11 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+let anchorTags = document.getElementsByTagName("a");
+anchorTags[0].textContent = "Services";
+anchorTags[1].textContent = "About";
+anchorTags[2].textContent = "Vision";
+anchorTags[3].textContent = "Features";
+anchorTags[4].textContent = "About";
+anchorTags[5].textContent = "Contact";
+console.log(anchorTags);
