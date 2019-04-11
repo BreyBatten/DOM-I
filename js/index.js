@@ -50,7 +50,7 @@ anchorTags[4].textContent = "About";
 anchorTags[5].textContent = "Contact";
 
 const ctaText = document.querySelector("h1");
-ctaText.textContent = "DOM Is Awesome";
+ctaText.innerHTML = "DOM<br>Is<br>Awesome";
 
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = "Get Started";
@@ -73,3 +73,13 @@ pElements[1].innerText = siteContent["main-content"]["services-content"];
 pElements[2].innerText = siteContent["main-content"]["product-content"];
 pElements[3].innerText = siteContent["main-content"]["vision-content"];
 
+const infoHeader = document.querySelector(".contact h4");
+infoHeader.textContent = "Contact";
+
+let infoP = document.querySelectorAll(".contact p");
+infoP[0].innerText = siteContent["contact"]["address"];
+infoP[1].innerText = siteContent["contact"]["phone"];
+infoP[2].innerText = siteContent["contact"]["email"];
+
+const footerP = document.querySelector("footer p");
+footerP.textContent = "Copyright Great Idea! 2108";
