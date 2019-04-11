@@ -43,11 +43,25 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let anchorTags = document.getElementsByTagName("a");
 anchorTags[0].textContent = "Services";
-anchorTags[1].textContent = "About";
+anchorTags[1].textContent = "Product";
 anchorTags[2].textContent = "Vision";
 anchorTags[3].textContent = "Features";
 anchorTags[4].textContent = "About";
 anchorTags[5].textContent = "Contact";
+
+let navItems = document.querySelector("nav");
+
+let blog = document.createElement("a");
+blog.setAttribute("href", "0");
+blog.textContent = "Blog";
+navItems.appendChild(blog);
+blog.style.color = "green";
+
+let team = document.createElement("a");
+team.setAttribute("href", "0");
+team.textContent = "Meet Us";
+navItems.prepend(team);
+team.style.color = "green";
 
 const ctaText = document.querySelector("h1");
 ctaText.innerHTML = "DOM<br>Is<br>Awesome";
@@ -83,3 +97,4 @@ infoP[2].innerText = siteContent["contact"]["email"];
 
 const footerP = document.querySelector("footer p");
 footerP.textContent = "Copyright Great Idea! 2108";
+
