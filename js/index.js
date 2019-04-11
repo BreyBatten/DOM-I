@@ -49,14 +49,27 @@ anchorTags[3].textContent = "Features";
 anchorTags[4].textContent = "About";
 anchorTags[5].textContent = "Contact";
 
-let ctaText = document.querySelector("h1");
+const ctaText = document.querySelector("h1");
 ctaText.textContent = "DOM Is Awesome";
 
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = "Get Started";
 
-const ctaImg = document.querySelector('#cta-img');
+const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = "img/header-img.png";
 
-const midImg = document.querySelector('#middle-img');
+const midImg = document.querySelector("#middle-img");
 midImg.src = "img/mid-page-accent.jpg";
+
+let h4Elements = document.getElementsByTagName("h4");
+h4Elements[0].innerText = siteContent["main-content"]["features-h4"];
+h4Elements[1].innerText = siteContent["main-content"]["services-h4"];
+h4Elements[2].innerText = siteContent["main-content"]["product-h4"];
+h4Elements[3].innerText = siteContent["main-content"]["vision-h4"];
+
+let pElements = document.getElementsByTagName("p");
+pElements[0].innerText = siteContent["main-content"]["features-content"];
+pElements[1].innerText = siteContent["main-content"]["services-content"];
+pElements[2].innerText = siteContent["main-content"]["product-content"];
+pElements[3].innerText = siteContent["main-content"]["vision-content"];
+
